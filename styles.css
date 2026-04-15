@@ -1,4 +1,4 @@
-/* Variables de tema oscuro profesional */
+
 :root {
     --bg-main: #0a0a0f;
     --bg-card: #15151e;
@@ -142,4 +142,19 @@ body {
     font-weight: 600;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.btn-add {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  background: #333;
 }
