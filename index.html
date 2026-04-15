@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario Hi-Fi | Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+
+  <body class="fade-in">
+    <nav class="navbar slide-down">
+      <div class="nav-container">
+        <h1 class="logo">Audio<span>Vault</span></h1>
+        <div class="nav-links">
+          <a href="index.html" class="active">Colección</a>
+          <a href="agregar.html">Añadir Equipo</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="page-header slide-up-stagger-1">
+        <h2>Mi Colección de Audio</h2>
+        <p>Gestiona tus DACs, IEMs y auriculares.</p>
+      </header>
+
+      <!-- GRID DINÁMICO -->
+      <div class="grid" id="grid">
+        <!-- Si no hay datos en localStorage, puedes dejar esto como fallback -->
+
+        <article class="card slide-up-stagger-2 hover-scale">
+          <div class="card-content">
+            <span class="tag">DAC / Smartphone</span>
+            <h3>LG V60 ThinQ</h3>
+            <p>Quad DAC integrado, excelente para audio de alta fidelidad.</p>
+          </div>
+        </article>
+
+        <article class="card slide-up-stagger-3 hover-scale">
+          <div class="card-content">
+            <span class="tag">Auriculares</span>
+            <h3>Pulse Elite</h3>
+            <p>Drivers magnéticos planos para una experiencia inmersiva.</p>
+          </div>
+        </article>
+
+        <article class="card slide-up-stagger-4 hover-scale">
+          <div class="card-content">
+            <span class="tag">IEMs</span>
+            <h3>Audiofonos Pro</h3>
+            <p>Excelente detalle, respuesta rápida y perfil en V divertido.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- JS SIEMPRE AL FINAL -->
+    <script src="main.js"></script>
+  </body>
+</html>

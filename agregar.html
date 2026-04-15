@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Añadir Equipo | AudioVault</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+
+  <body class="fade-in">
+    <nav class="navbar slide-down">
+      <div class="nav-container">
+        <h1 class="logo">Audio<span>Vault</span></h1>
+        <div class="nav-links">
+          <a href="index.html">Colección</a>
+          <a href="agregar.html" class="active">Añadir Equipo</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container form-container">
+      <div class="form-card slide-up-stagger-1">
+        <header class="form-header slide-up-stagger-2">
+          <h2>Registrar Dispositivo</h2>
+          <p>Agrega un nuevo equipo a tu colección Hi-Fi.</p>
+        </header>
+
+        <form class="styled-form slide-up-stagger-3">
+          <div class="input-group slide-up-stagger-4">
+            <label for="nombre">Modelo del Dispositivo</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Ej: Sony WH-1000XM5"
+              required
+            />
+          </div>
+
+          <div class="input-group slide-up-stagger-5">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" required>
+              <option value="iem">IEMs</option>
+              <option value="dac">DAC / Amplificador</option>
+              <option value="headphone">Auriculares</option>
+              <option value="speaker">Altavoces</option>
+            </select>
+          </div>
+
+          <div class="input-group slide-up-stagger-6">
+            <label for="specs">Especificaciones Técnicas</label>
+            <textarea
+              id="specs"
+              rows="4"
+              placeholder="Impedancia, sensibilidad, códecs..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-primary hover-pulse slide-up-stagger-7"
+          >
+            Guardar en Bóveda
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- JS SIEMPRE AL FINAL -->
+    <script src="main.js"></script>
+  </body>
+</html>

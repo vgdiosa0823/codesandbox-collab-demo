@@ -1,0 +1,129 @@
+/* =========================================
+   🎬 ENTRADA PRO (WOW EFFECT)
+   ========================================= */
+
+.fade-in {
+  animation: fadeZoom 0.8s ease forwards;
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* =========================================
+     🚀 ELEMENTOS (APARICIÓN PRO)
+     ========================================= */
+
+[class*="slide-up-stagger"],
+.slide-down {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  filter: blur(10px);
+}
+
+/* CUANDO APARECEN */
+.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* =========================================
+     🎯 TARJETAS PRO (HOVER)
+     ========================================= */
+
+.card {
+  transition: all 0.4s ease;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.hover-scale:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Glow suave */
+.card:hover {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.3);
+}
+
+/* =========================================
+     🔘 BOTÓN PRO
+     ========================================= */
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.btn-primary:active {
+  transform: scale(0.96);
+}
+
+/* =========================================
+     ✨ INPUTS PRO
+     ========================================= */
+
+.styled-form input,
+.styled-form select,
+.styled-form textarea {
+  transition: all 0.3s ease;
+}
+
+.styled-form input:focus,
+.styled-form select:focus,
+.styled-form textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* =========================================
+     🔗 NAV PRO
+     ========================================= */
+
+.nav-links a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: #6366f1;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================================
+     ✨ TAGS
+     ========================================= */
+
+.tag {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+}
